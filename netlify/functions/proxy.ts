@@ -70,6 +70,7 @@ export default async (request: Request, context: Context) => {
     method: request.method,
     duplex: 'half',
     headers,
+    timeout: 120000,
   });
 
   const responseHeaders = {
